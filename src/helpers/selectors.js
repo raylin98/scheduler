@@ -17,4 +17,14 @@ export function getInterview(state, interview) {
     ...interview,
     interviewer: state.interviewers[interview.interviewer]
   };
-}
+};
+
+export function getInterviewersForDay(state, day) {
+  const interviewerDate = state.days.find(date => 
+    day === date.name);
+
+    if (state.days.length === 0 || interviewerDate === undefined)
+    return [];
+
+    return interviewerDate.interviewers.map(id => state.interviewers[id]);
+};
