@@ -41,10 +41,7 @@ export default function Application(props) {
     .put(`http://localhost:8001/api/appointments/${id}`, {interview:interview})
     .then(res => {
       setState({...state, appointments})
-      return res
-    })
-    .catch(err => {
-      console.log(err)
+      return res.status
     })
   }
 
@@ -63,9 +60,6 @@ export default function Application(props) {
     .then(res => {
       setState({...state, appointments})
       return res
-    })
-    .catch(err => {
-      console.log(err)
     })
   }
 
