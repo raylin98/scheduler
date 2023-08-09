@@ -40,7 +40,7 @@ export default function useApplicationData() {
       spots: !state.appointments[id].interview ? state.days[dayOfWeek].spots - 1 : state.days[dayOfWeek].spots
     };
 
-    let days = state.days
+    let days = [...state.days]
     days[dayOfWeek] = day;
 
     const appointment = {
