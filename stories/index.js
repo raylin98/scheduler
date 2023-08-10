@@ -64,7 +64,7 @@ storiesOf("DayListItem", module) //Initiates Storybook and registers our DayList
     },
   ];
   
-  storiesOf("DayList", module)
+storiesOf("DayList", module)
   .addParameters({
     backgrounds: [{ name: "dark", value: "#222f3e", default: true }],
   })
@@ -120,7 +120,7 @@ storiesOf("InterviewerListItem", module)
     { id: 5, name: "Sven Jones", avatar: "https://i.imgur.com/twYrpay.jpg" }
   ];
   
-  storiesOf("InterviewerList", module)
+storiesOf("InterviewerList", module)
   .addParameters({
     backgrounds: [{ name: "dark", value: "#222f3e", default: true }]
   })
@@ -140,8 +140,9 @@ storiesOf("InterviewerListItem", module)
       interviewers={interviewers}
       onChange={action("setInterviewer")}
     />
-  ))
-  storiesOf("Appointment", module)
+  ));
+
+storiesOf("Appointment", module)
   .addParameters({
     backgrounds: [{ name: "white", value: "#fff", default: true }]
   })
@@ -194,7 +195,3 @@ storiesOf("InterviewerListItem", module)
       <Appointment time="5pm" />
     </Fragment>
   ));
-
-
-
-    

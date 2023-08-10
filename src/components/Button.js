@@ -1,7 +1,5 @@
 import React from "react";
-
 import "components/Button.scss";
-
 import classNames from "classnames";
 
 export default function Button(props) {
@@ -9,7 +7,7 @@ export default function Button(props) {
      "button--confirm": props.confirm,
      "button--danger": props.danger
    });
- 
+
    return (
      <button
        className={buttonClass}

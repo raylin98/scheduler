@@ -8,7 +8,6 @@ export default function useApplicationData() {
     appointments: {}
   })
   const setDay = day => setState({ ...state, day });
-  /* const dailyAppointments = getAppointmentsForDay(state, state.day) */
 
   useEffect(() => {
      Promise.all([
