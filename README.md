@@ -34,6 +34,10 @@ npm run storybook
 ```
 ## Demo
 
+
+https://github.com/raylin98/scheduler/assets/124003437/eac56a11-2a54-47e6-b246-0750a2520263
+
+
 ## Server/Database Setup
 
 To utilize the application's full features you have to run both the client and the API server simultatenously
